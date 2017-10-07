@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typing</title>
+    <style>
+        .cursor:after {
+            content: '_';
+            opacity: 0;
+            animation: cursor-animation 1s infinite;
+        }
+
+        @keyframes cursor-animation {
+            0% {
+                opacity: 0;
+            }
+            40% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1 class="cursor">This is a long heading</h1>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="typingCode.js"></script>
+
+</body>
+</html>
