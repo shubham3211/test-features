@@ -38,7 +38,7 @@ function deleteText(jqTextObject) {
     for (let i = text.length - 1; i >= 0; i--) {
         deleteDelay += 50;
         setTimeout(() => {
-            jqTextObject.html(text.substring(0, i));
+            jqTextObject.text(text.substring(0, i));
         }, deleteDelay);
     }
     deleteDelay += 200;
