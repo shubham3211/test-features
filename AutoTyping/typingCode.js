@@ -10,7 +10,6 @@ function type(...n) {
 }
 
 function typeAndDeleteNextString(jqTextObject) {
-    console.log("typeAndDeleteNextString()");
     if (stringQueue.length != 0) {
         typeString(jqTextObject, stringQueue.shift());
     }
@@ -25,7 +24,7 @@ function typeString(jqTextObject, str) {
             jqTextObject.append(str.charAt(i));
         }, typingDelay)
     }
-    if (stringQueue.length > 1) {
+    if (stringQueue.length > 0) {
         setTimeout(() => {
             deleteText(jqTextObject);
         }, typingDelay + 2500)
@@ -49,4 +48,4 @@ function generateRandomNumber(min,max) {
     return Math.floor(Math.random() *( max - min + 1) + min);
 }
 
-type($("h1"), "This is a test string!", "This is a test string!", "This is a test string!", "This is a test string!");
+type($("h1"), "Lana Del Ray is underrated artist", "Some of her good songs are", "Young and beautiful", "Summertimes sadness", "Blue jeans", "Video games");

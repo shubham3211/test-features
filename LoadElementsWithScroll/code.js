@@ -3,8 +3,8 @@
 // Pass that object as an argument of function preparePositionForLoading and loadElement
 // Code needs little optimisation
 
-let $box = $("#box")
-preparePositionForLoading($box)
+let $box = $("#box");
+preparePositionForLoading($box);
 window.onscroll = function () {
     loadElement($box);
 };
